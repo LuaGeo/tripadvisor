@@ -1,0 +1,27 @@
+/* GENERAL */
+
+
+/* -- HEADER ----------------------- */
+
+header {
+  display: flex;
+  padding: 10px auto ;
+  border: solid 1px black;
+}
+
+
+header > img {
+  width: 188px;
+}
+
+
+header > div {
+  width: 342px;
+  border: solid 1px gray;
+  border-radius: 20px;
+}
+
+/* -- MAIN ------------------------ */
+
+
+/* -- FOOTER ---------------------- */
