@@ -87,4 +87,69 @@ header ul .connection:hover {
 /* -- MAIN ------------------------ */
 
 
+main h1 {
+  font-size: 54px;
+  margin-top: 43px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-right: 14px;
+}
+
+main .title {
+  display: flex;
+}
+
+main h1:first-child {
+  color: #E85B5A;
+}
+main h1:first-child:hover {
+  color: #E85B5A;
+  text-decoration: underline;
+}
+main h1:last-child:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+main p {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 34px;
+}
+
+section, nav {
+  display: flex;
+  justify-content: space-between;
+  /* border: #000 1px solid; */
+}
+
+section nav {
+  flex: 1;
+  border: #000 1px solid;
+  padding: 11px 16px;
+  border-radius: 10px;
+  align-items: center;
+}
+section nav:not(:last-child) {
+  margin-right: 10px;
+}
+
+section nav:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* section nav .icon:hover {
+  color: #fff
+} */
+
+section .icon {
+  width: 19px;
+  height: 19px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
 /* -- FOOTER ---------------------- */
