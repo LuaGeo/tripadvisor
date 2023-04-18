@@ -1,25 +1,51 @@
 /* GENERAL */
-
+.container {
+  width: 1136px ;
+  margin: 0 auto
+}
 
 /* -- HEADER ----------------------- */
 
-header {
+header .container {
   display: flex;
-  padding: 10px auto ;
   border: solid 1px black;
+  padding: 10px;
 }
 
 
-header > img {
+.logo {
   width: 188px;
+  height:fit-content;
+  margin-right: 28px;
 }
 
-
-header > div {
+.searchbar {
   width: 342px;
-  border: solid 1px gray;
+  height: 38px;
+  border: solid 2px #EBD3D3;
   border-radius: 20px;
+  margin-right: 32px;
 }
+
+.loupe {
+  width: 18px;
+  height: 18px;
+  margin: 10px 13px
+}
+
+.container ul {
+  width: 527px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: solid black 1px;
+}
+
+.pencil {
+  width: 19px;
+  height: 19px;
+}
+
 
 /* -- MAIN ------------------------ */
 
