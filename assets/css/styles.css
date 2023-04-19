@@ -15,6 +15,7 @@ body {
 
 /* -- HEADER ----------------------- */
 header {
+  width: 100vw;
   position: fixed;
   background-color: #fff;
   z-index: 1;
@@ -260,6 +261,23 @@ button {
 .placesToVisit {
   height: 1040px;
   border: #000 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.placesToVisit > div {
+  border: red 1px solid;
+  display: flex;
+  height: 100px;
+}
+
+.placesToVisit > div > div:first-child {
+  border: #000 1px solid;
+  flex: 1;
+}
+.placesToVisit > div > div:last-child {
+  border: blue 1px solid;
+  flex: 3;
 }
 
 
