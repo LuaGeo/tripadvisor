@@ -139,12 +139,14 @@ h2 {
 
 /* Images Block */
 
-.imagesBlock {
+.imagesBlock/*:not(:last-child)*/{
   height: 430px;
   /* border: 1px solid black; */
   display: flex;
   gap: 2px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
+  position: relative;
+  
 }
 
 .imagesBlock > img {
@@ -163,5 +165,13 @@ h2 {
 .imagesBlock div img {
   height: calc((100% - 2px) / 2);
   object-fit: cover;
+}
+
+.travellersChoice {
+  width: 59px;
+  height: 70px;
+  background-color: gold;
+  position: absolute;
+  left: 20px;
 }
 /* -- FOOTER ---------------------- */
