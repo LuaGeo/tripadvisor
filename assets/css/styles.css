@@ -1,4 +1,5 @@
 /* GENERAL */
+
 .container {
   width: 1136px ;
   margin: 0 auto
@@ -8,16 +9,12 @@ body {
   font-family: 'Trip Sans', sans-serif;
 }
 
-
-
 /* -- HEADER ----------------------- */
 
 header .container {
   display: flex;
-  /* border: solid 1px black; */
   padding: 10px;
 }
-
 
 .logo {
   width: 188px;
@@ -62,12 +59,10 @@ header li {
   font-size: 16px;
 }
 
-
 header li:hover{
   
   background-color: #EDEDED;
   border-radius: 20px;
-  text-decoration: underline;
 
 }
 
@@ -85,7 +80,6 @@ header ul .connection:hover {
 }
 
 /* -- MAIN ------------------------ */
-
 
 main h1 {
   font-size: 54px;
@@ -117,39 +111,57 @@ main p {
   margin-bottom: 34px;
 }
 
-section, nav {
+main nav, main nav div {
   display: flex;
   justify-content: space-between;
-  /* border: #000 1px solid; */
 }
 
-section nav {
+main nav div {
   flex: 1;
   border: #000 1px solid;
   padding: 11px 16px;
   border-radius: 10px;
   align-items: center;
+  margin-bottom: 24px;
 }
-section nav:not(:last-child) {
+main nav div:not(:last-child) {
   margin-right: 10px;
 }
 
-section nav:hover {
+main nav div:hover {
   background-color: #000;
   color: #fff;
-}
-
-/* section nav .icon:hover {
-  color: #fff
-} */
-
-section .icon {
-  width: 19px;
-  height: 19px;
 }
 
 h2 {
   font-weight: bold;
 }
 
+/* Images Block */
+
+.imagesBlock {
+  height: 430px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 2px;
+  margin-bottom: 23px;
+}
+
+.imagesBlock > img {
+  height: 100%;
+  flex: 1;
+}
+
+.imagesBlock div {
+  height: 100%;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.imagesBlock div img {
+  height: calc((100% - 2px) / 2);
+  object-fit: cover;
+}
 /* -- FOOTER ---------------------- */
