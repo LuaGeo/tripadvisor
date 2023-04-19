@@ -9,7 +9,18 @@ body {
   font-family: 'Trip Sans', sans-serif;
 }
 
+* {
+  box-sizing: content-box;
+}
+
 /* -- HEADER ----------------------- */
+header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
 
 header .container {
   display: flex;
@@ -36,7 +47,7 @@ header .container {
   margin: 10px 13px
 }
 
-.container ul {
+header .container ul {
   width: 550px;
   align-items: center;
   display: flex;
@@ -105,7 +116,7 @@ main h1:last-child:hover {
   text-decoration: underline;
 }
 
-main p {
+main .container > p {
   font-size: 14px;
   color: #333333;
   margin-bottom: 34px;
@@ -124,6 +135,7 @@ main nav div {
   align-items: center;
   margin-bottom: 24px;
 }
+
 main nav div:not(:last-child) {
   margin-right: 10px;
 }
@@ -133,7 +145,7 @@ main nav div:hover {
   color: #fff;
 }
 
-h2 {
+main nav div p {
   font-weight: bold;
 }
 
@@ -167,11 +179,89 @@ h2 {
   object-fit: cover;
 }
 
-.travellersChoice {
+img.travellersChoice {
   width: 59px;
   height: 70px;
   background-color: gold;
   position: absolute;
   left: 20px;
 }
+
+.subtitle, .subtitle p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #333333;
+}
+
+.subtitle ul {
+  display: flex;
+  gap: 7px;
+}
+
+/* Intro block */
+.introduction {
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 74px;
+}
+.introduction div:first-child {
+  width: 50%;
+}
+.introduction div:first-child > p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.introduction div:last-child {
+  width: 400px;
+  height: 180px;
+  background-color: #E85B5A;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 25px;
+  padding-top: 28px;
+  padding-right: 35px;
+  padding-bottom: 23px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 25pt;
+  margin-bottom: 13px;
+}
+
+button {
+  margin-top: 21px;
+  height: 42px;
+  width: 116px;
+  background-color: #333333;
+  border-radius: 16px;
+  color: #fff;
+  border-style: none;
+}
+
+.introduction div:last-child img {
+  width: 461px;
+  height: 162px;
+  object-fit: cover;
+  margin-left: -26px;
+  margin-top: 23px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.placesToVisit {
+  height: 1040px;
+  border: #000 1px solid;
+}
+
+
+
 /* -- FOOTER ---------------------- */
