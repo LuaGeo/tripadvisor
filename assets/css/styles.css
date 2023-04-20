@@ -1,7 +1,7 @@
 /* GENERAL */
 
 .container {
-  width: 1130px ;
+  max-width: 1130px ;
   margin: 0 auto
 }
 
@@ -216,6 +216,7 @@ img.travellersChoice {
 .introduction div:first-child > p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
+  line-height: 18pt;
 }
 .introduction div:last-child {
   width: 400px;
@@ -264,28 +265,75 @@ button {
 .entretainment {
   /* border: #000 1px solid; */
   display: flex;
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 100%;
 }
 
-.entretainment > div:first-child {
-  border: red 1px solid;
+.texte {
+  /* border: red 1px solid; */
   width: 25%;
 }
-.entretainment > div:last-child {
-  border: blue 1px solid;
-  /* flex: 3; */
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
 
+
+.entretainment > div:last-child {
+  /* border: blue 1px solid; */
+  width: 75%;
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.entretainment > div:last-child::-webkit-scrollbar{
+  display: none;
 }
 .entretainment > div:last-child img {
-  border: green 1px solid;
+  /* border: green 1px solid; */
   object-fit: cover;
   height: 200px;
+  display: block;
+}
+
+.texte p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-right: 66px;
+  line-height: 17pt;
+}
+
+.texte a {
+  color: #333333;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight:700;
+  font-size: 18px;
+}
+.columns p {
+  font-size: 14px;
+  line-height: 15pt;
+  color: #333333;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
 
 /* -- FOOTER ---------------------- */
+
+
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-width: 1020px) {
+  header .container ul li:not(img) {
+    display: none;
+  }
+}
