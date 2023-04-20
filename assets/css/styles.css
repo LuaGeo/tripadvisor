@@ -1,7 +1,7 @@
 /* GENERAL */
 
 .container {
-  width: 1136px ;
+  width: 1130px ;
   margin: 0 auto
 }
 
@@ -261,31 +261,29 @@ button {
   border-bottom-right-radius: 10px;
 }
 
-.placesToVisit {
-  height: 1040px;
-  border: #000 1px solid;
+.entretainment {
+  /* border: #000 1px solid; */
   display: flex;
-  flex-direction: column;
+  background-color: yellow;
+  width: 100%;
 }
 
-.placesToVisit > div {
+.entretainment > div:first-child {
   border: red 1px solid;
-  display: flex;
+  width: 25%;
 }
-
-.placesToVisit > div > div:first-child {
-  border: #000 1px solid;
-  flex: 1;
-}
-.placesToVisit > div > div:last-child {
+.entretainment > div:last-child {
   border: blue 1px solid;
-  flex: 3;
+  /* flex: 3; */
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+
 }
-.placesToVisit > div > div:last-child img {
+.entretainment > div:last-child img {
   border: green 1px solid;
-  height: 201px;
+  object-fit: cover;
+  height: 200px;
 }
 
 
