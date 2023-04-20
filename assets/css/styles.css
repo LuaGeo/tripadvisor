@@ -1,16 +1,16 @@
 /* GENERAL */
 
 .container {
-  max-width: 1130px ;
+  max-width: 1136px ;
   margin: 0 auto
 }
 
 body {
   font-family: 'Trip Sans', sans-serif;
+  box-sizing: content-box;
 }
 
 * {
-  box-sizing: content-box;
 }
 
 /* -- HEADER ----------------------- */
@@ -25,16 +25,18 @@ header {
 
 header .container {
   display: flex;
-  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
   width: 188px;
-  height:fit-content;
   margin-right: 28px;
 }
 
 .searchbar {
+  display: flex;
+  align-items: center;
   width: 342px;
   height: 38px;
   border: solid 2px #EBD3D3;
@@ -48,46 +50,53 @@ header .container {
   margin: 10px 13px
 }
 
-header .container ul {
-  width: 550px;
-  align-items: center;
+header .container nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  /* border: solid black 1px; */
 }
 
-header li img {
-  width: 19px;
-  height: 19px;
+i {
+  font-size: 22px;
   margin-right: 5px;
 }
 
-header li {
-  display: flex;
+header nav div {
   padding: 10px;
+  display: flex;
   align-items:center;
   justify-content: center;
   font-weight: bold;
   font-size: 16px;
 }
 
-header li:hover{
-  
-  background-color: #EDEDED;
-  border-radius: 20px;
-
+header nav div a {
+  color: #000;
+  text-decoration: none;
 }
 
-header ul .connection {
+header nav div:hover:not(:nth-child(4)){
+  background-color: #EDEDED;
+  border-radius: 20px;
+}
+
+
+header nav button {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   background-color: black;
-  border-radius: 20px;
+  border-radius: 30px;
+  height: 40px;
+  width: 145px;
+  font-size: 16px;
+  font-family: 'Trip Sans', sans-serif;
+  font-weight: bold;
+  border-style: none;
 }
 
-header ul .connection:hover {
+header nav button:hover {
   background-color: #333333;
 }
 
@@ -128,10 +137,17 @@ main .container > p {
 
 main nav, main nav div {
   display: flex;
-  justify-content: space-between;
 }
 
-main nav div {
+main nav {
+  max-width: 1136px;
+}
+
+.hidden {
+  display: none;
+}
+
+main nav div div {
   flex: 1;
   border: #000 1px solid;
   padding: 11px 16px;
@@ -142,15 +158,22 @@ main nav div {
 
 main nav div:not(:last-child) {
   margin-right: 10px;
+  width: 67%;
 }
 
-main nav div:hover {
+main nav div:last-child {
+  width: 33%;
+}
+
+main nav div div:hover {
   background-color: #000;
   color: #fff;
 }
 
-main nav div p {
+main nav div a {
   font-weight: bold;
+  color: #000;
+  text-decoration: none;
 }
 
 /* Images Block */
@@ -242,7 +265,7 @@ h3 {
   margin-bottom: 13px;
 }
 
-button {
+.introdution button {
   margin-top: 21px;
   height: 42px;
   width: 116px;
@@ -332,8 +355,40 @@ h4 {
 
 /* -- MEDIA QUERIES -- */
 
+@media (max-width: 1183px) {
+  .hidden {
+    display: flex;
+  }
+  main nav {
+    flex-direction: column;
+    max-width: 1136px;
+  }
+
+}
+
 @media (max-width: 1020px) {
-  header .container ul li:not(img) {
+  header nav div a:last-child {
     display: none;
   }
+  
+  header nav div i {
+    margin: 5px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+  } 
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 134px;
+    justify-content: center;
+  }
+  .searchbar {
+    display: none;
+  }
+  header > div nav {
+    display: none;
+  }
+  
 }

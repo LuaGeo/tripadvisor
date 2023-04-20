@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/fonts.css">
   <link rel="stylesheet" href="./assets/css/icons.css">
-  <script src="https://kit.fontawesome.com/28cc0be7ce.js" crossorigin="anonymous"></script>
   <title>Tripadvisor</title>
 </head>
 <body>
@@ -21,20 +20,12 @@
       <div class = "searchbar"><img class = "loupe" src="./assets/img/search.png" alt="loupe de recherche"></div>
       
       <nav>
-        <i class="icon-pencil" alt="pencil suivi d'avis"></i><a href="#">Avis</a>
-        <i class="icon-heart" alt="heart suivi de voyages"></i><a href="#">Voyages</a>
-        <i class="icon-notification_bell" alt="bell"></i><a href="#">Alertes</a>
-        <a href="#" class = "connection">Connectez-vous</a>
-        <i class="icon-empty_cart" alt="empty cart"></i><a href="#"></i>Panier</a>
+        <div><a href="#"><i class="icon-pencil" alt="pencil suivi d'avis"></i></a><a href="#">Avis</a></div>
+        <div><a href="#"><i class="icon-heart" alt="heart suivi de voyages"></i></a><a href="#">Voyages</a></div>
+        <div><a href="#"><i class="icon-notification_bell" alt="bell"></i></a><a href="#">Alertes</a></div>
+        <div class="connection"><button>Connectez-vous</button></div>
+        <div><a href="#"><i class="icon-empty_cart" alt="empty cart"></i></a><a href="#"></i>Panier</a></div>
       </nav>
-      <!-- <ul>
-        <li><img src="./assets/img/pencil.png" alt="pencil suivi d'avis">Avis</li>
-        <li><img src="./assets/img/heart.png" alt="heart suivi de voyages">Voyages</li>
-        <li><img src="./assets/img/bell.png" alt="bell">Alertes</li>
-        <li class = "connection">Connectez-vous</li>
-        <li><img src="./assets/img/shopping-cart.png" alt=""> Panier</li>
-      </ul> -->
-
     </div>
 
   </header>
@@ -47,12 +38,18 @@
       
 
       <nav>
-        <div><p>Hôtels</p><i class="fa-solid fa-bed"></i></div>
-        <div><p>Locations de vacances</p><i class="fa-solid fa-house"></i></div>
-        <div><p>Activités</p><i class="fa-solid fa-ticket"></i></div>
-        <div><p>Restaurants</p><i class="fa-solid fa-utensils"></i></div>
-        <div><p>Forums de voyage</p><i class="fa-solid fa-message"></i></div>
-        <div><p>Plus</p><i class="fa-solid fa-plus"></i></div>
+        <div>
+          <div><a href="#">Hôtels</a><i class="icon-hotels"></i></div>
+          <div><a href="#">Locations de vacances</a><i class="icon-vacation_rentals"></i></div>
+          <div><a href="#">Activités</a><i class="icon-attractions"></i></div>
+          <div><a href="#">Restaurants</a><i class="icon-restaurants"></i></div>
+        </div>
+        <div>
+          <div><a href="#">Forums de voyage</a><i class="icon-forums"></i></div>
+          <div class = "hidden"><a href="#">Vols</a><i class="icon-flights"></i></div>
+          <div class = "hidden"><a href="#">Croisières</a><i class="icon-cruises"></i></div>
+          <div><a href="#">Plus</a><i class="icon-more_horizontal"></i></div>
+        </div>
       </nav>
 
       <section class = "imagesBlock">
@@ -212,9 +209,6 @@
           <img src="" alt=""><img src="" alt=""><img src="" alt="">
         </div>
       </section>
-      
-    </section>
-
 
     </div>
   </main>
