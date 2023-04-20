@@ -93,6 +93,9 @@ header ul .connection:hover {
 
 /* -- MAIN ------------------------ */
 
+main .container {
+  padding-top: 40px;
+}
 main h1 {
   font-size: 54px;
   margin-top: 43px;
@@ -268,7 +271,6 @@ button {
 .placesToVisit > div {
   border: red 1px solid;
   display: flex;
-  height: 100px;
 }
 
 .placesToVisit > div > div:first-child {
@@ -278,6 +280,12 @@ button {
 .placesToVisit > div > div:last-child {
   border: blue 1px solid;
   flex: 3;
+  display: flex;
+  justify-content: space-between;
+}
+.placesToVisit > div > div:last-child img {
+  border: green 1px solid;
+  height: 201px;
 }
 
 
